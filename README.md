@@ -5,13 +5,13 @@
 
 
 ### Src
- Actions - This is a directory.
+ Actions - Directory.
   1. Clear.php - This contain logic to clear the data
   2. Requests.php - handles the logic that post Vat details to the database
   3. Export - handles logic for the export to Csv
- Database
+ Database - Directory
    Database.php - handles database connection.
-Vat
+Vat - Directory
     1. VatCalculator.php - handles logic that calculates and saves vat data
 Includes
    vatData.php - this pulls the data from database and puts in a table.
