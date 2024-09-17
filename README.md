@@ -9,8 +9,10 @@
   1. Clear.php - This contain logic to clear the data
   2. Requests.php - handles the logic that post Vat details to the database
   3. Export - handles logic for the export to Csv
+     
  Database - Directory
    Database.php - handles database connection.
+   
 Vat - Directory
     1. VatCalculator.php - handles logic that calculates and saves vat data
 Includes
