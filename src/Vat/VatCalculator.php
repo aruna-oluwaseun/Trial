@@ -19,7 +19,7 @@ class VatCalculator
   
   }
 
-  public function CalculateOriginalValueFromIncAndEx($amount, $vatRate)
+  public function Calculate($amount, $vatRate)
   {
      $valueWithVatEx = $amount * (1 + $vatRate/100);
      $exVatAmount = $amount * $vatRate/100;
@@ -32,7 +32,7 @@ class VatCalculator
 
   public function SaveVatDetails($amt, $vat)
   {
-     $calculatedVat = $this->CalculateOriginalValueFromIncAndEx($amt,$vat);
+     $calculatedVat = $this->Calculate($amt,$vat);
 
      $originalValue= htmlspecialchars($amt, ENT_QUOTES, 'UTF-8');
      $valueWithVatAdded = htmlspecialchars($calculatedVat['ExVat Value after Added'], ENT_QUOTES, 'UTF-8');
