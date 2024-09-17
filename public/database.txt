@@ -1,0 +1,10 @@
+ CREATE TABLE `vat` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `original_value` decimal(10,2) DEFAULT NULL,
+  `value_with_exvat` decimal(10,2) DEFAULT NULL,
+  `amt_vat_calculated_exvat` decimal(10,2) DEFAULT NULL,
+  `value_with_incvat` decimal(10,2) DEFAULT NULL,
+  `amt_vat_calculated_incvat` decimal(10,2) DEFAULT NULL,
+  `cleared` int DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci |
